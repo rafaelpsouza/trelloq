@@ -28,6 +28,9 @@ https://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Appl
 
 #### Count card with BUG label created after some day
 
-``` ./trelloq mytoken mykey myboardId "select count(*) from card as card
+``` 
+./trelloq mytoken mykey myboardId "select count(*) from card as card
       join card_label as card_label on card.id = card_label.idCard
-      join label as label on label.id = card_label.idLabel where label.name = 'BUG' and card.created > '2017-12-24'" ```
+      join label as label on label.id = card_label.idLabel 
+      where label.name = 'BUG' and card.created > '2017-12-24'" 
+```
