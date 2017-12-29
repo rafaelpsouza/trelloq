@@ -20,11 +20,11 @@ https://trello.com/1/authorize?key=substitutewithyourapplicationkey&name=My+Appl
 
 #### Count cards
 
-```./trelloq mytoken mykey myboardId "select count(*) from card ```
+```./trelloq mytoken mykey myboardId "select count(*) from card" ```
 
 #### Display list ids and names
 
-```./trelloq mytoken mykey myboardId plWKoAVj "select id, name from list ```
+```./trelloq mytoken mykey myboardId "select id, name from list" ```
 
 #### Count card with BUG label created after some day
 
